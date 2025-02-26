@@ -1,0 +1,115 @@
+.orders {
+    padding: 30px;
+    max-width: 100%;
+    width: 900px;
+    margin: 40px auto;
+    background-color: #fafafa;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .order-list h3 {
+    font-size: 26px;
+    color: #222;
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+  }
+  
+  .order-list ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .order-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #ffffff;
+    border-left: 5px solid #007bff;
+    border-radius: 12px;
+    transition: box-shadow 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.06);
+  }
+  
+  .order-list li:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  }
+  
+  .order-list li p {
+    margin: 0;
+    font-size: 17px;
+    color: #444;
+    flex: 1;
+  }
+  
+  .order-list li p.order-id {
+    font-weight: bold;
+    color: #007bff;
+    font-size: 18px;
+    flex-shrink: 0;
+    margin-right: 20px;
+  }
+  
+  .order-list li p:last-child {
+    font-weight: 600;
+    font-size: 18px;
+    color: #222;
+    text-align: right;
+  }
+  
+  .no-orders {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  .no-orders p {
+    font-size: 20px;
+    color: #888;
+    margin-bottom: 25px;
+    font-weight: 500;
+  }
+  
+  .btn {
+    padding: 12px 18px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+  }
+  
+  .btn:hover {
+    background-color: #218838;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .order-list li {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .order-list li p {
+      text-align: left;
+      margin-bottom: 10px;
+    }
+  
+    .order-list li p:last-child {
+      text-align: left;
+    }
+  
+    .btn {
+      width: 100%;
+      text-align: center;
+    }
+  }
+  
