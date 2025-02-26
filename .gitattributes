@@ -1,0 +1,5 @@
+# Force Unix-style (LF) line endings for all files
+* text=auto
+
+# Ignore node_modules folder for line-ending changes
+node_modules/** binary
